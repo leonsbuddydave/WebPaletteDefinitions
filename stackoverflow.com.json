@@ -1,0 +1,41 @@
+{
+	"name": "Stack Overflow",
+	"commands": [
+		{
+			"name": "Navigate: Sign Up",
+			"steps": [
+				{
+					"type": "SIMULATE_CLICK",
+					"data": {
+						"selector": ".links-container > .topbar-menu-links > .login-link:first-of-type"
+					}
+				}
+			]
+		},
+		{
+			"name": "Navigate: Log In",
+			"steps": []
+		},
+		{
+			"name": "Navigate: Tour",
+			"steps": []
+		},
+		{
+			"name": "Navigate: About Us",
+			"steps": [
+				{
+					"type": "SIMULATE_CLICK",
+					"data": {
+						"selector": ".js-help-button"
+					}
+				},
+				{
+					"type": "SIMULATE_CLICK",
+					"data": {
+						"selector": ".js-help-dialog li:nth-of-type(4) a"
+					}
+				}
+			]
+		}
+	]
+}
