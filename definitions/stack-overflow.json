@@ -43,6 +43,24 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Navigate: Edit Profile & Settings",
+			"steps": [
+				{
+					"type": "SIMULATE_CLICK",
+					"data": {
+						"selector": ".profile-me"
+					}
+				},
+				{ "type": "WAIT_FOR_REFRESH" },
+				{
+					"type": "SIMULATE_CLICK",
+					"data": {
+						"selector": "#tabs > a:nth-child(3)"
+					}
+				}
+			]
 		}
 	]
 }
