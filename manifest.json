@@ -1,0 +1,6 @@
+{
+	"root": "definitions",
+	"mappings": {
+		"stackoverflow.com": "stack-overflow.json"
+	}
+}
