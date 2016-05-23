@@ -5,9 +5,9 @@
 			"name": "Navigate: Sign Up",
 			"steps": [
 				{
-					"type": "SIMULATE_CLICK",
+					"type": "NAVIGATE",
 					"data": {
-						"selector": ".links-container > .topbar-menu-links > .login-link:first-of-type"
+						"destination": "http://stackoverflow.com/users/signup"
 					}
 				}
 			]
@@ -25,7 +25,14 @@
 		},
 		{
 			"name": "Navigate: Tour",
-			"steps": []
+			"steps": [
+				{
+					"type": "NAVIGATE",
+					"data": {
+						"destination": "https://stackoverflow.com/tour"
+					}
+				}
+			]
 		},
 		{
 			"name": "Navigate: About Us",
@@ -46,6 +53,14 @@
 		},
 		{
 			"name": "Navigate: Edit Profile & Settings",
+			"conditions": [
+				{
+					"type": "ELEMENT_EXISTS",
+					"data": {
+						"selector": ".profile-me"
+					}
+				}
+			],
 			"steps": [
 				{
 					"type": "SIMULATE_CLICK",
