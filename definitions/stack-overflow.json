@@ -58,10 +58,20 @@
 			"name": "Navigate: Other StackExchange Sites",
 			"steps": [
 				{
-					"type": "FREEFORM_INPUT",
+					"type": "OPTION_INPUT",
 					"data": {
 						"question": "Which StackExchange site?",
-						"id": "subdomain"
+						"id": "subdomain",
+						"options": [
+							"academia", "bitcoin", "aviation"
+						]
+					}
+				},
+				{
+					"type": "FREEFORM_INPUT",
+					"data": {
+						"question": "Enter something here",
+						"id": "whatever"
 					}
 				},
 				{
