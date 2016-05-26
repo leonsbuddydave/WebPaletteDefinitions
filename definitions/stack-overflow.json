@@ -1,5 +1,8 @@
 {
 	"name": "Stack Overflow",
+	"globals": {
+		"BASE_URL": "stackexchange.com"
+	},
 	"commands": [
 		{
 			"name": "Navigate: Sign Up",
@@ -47,6 +50,24 @@
 					"type": "SIMULATE_CLICK",
 					"data": {
 						"selector": ".js-help-dialog li:nth-of-type(4) a"
+					}
+				}
+			]
+		},
+		{
+			"name": "Navigate: Other StackExchange Sites",
+			"steps": [
+				{
+					"type": "FREEFORM_INPUT",
+					"data": {
+						"question": "Which StackExchange site?",
+						"id": "subdomain"
+					}
+				},
+				{
+					"type": "NAVIGATE",
+					"data": {
+						"destination": "http://{{subdomain}}.{{BASE_URL}}"
 					}
 				}
 			]
