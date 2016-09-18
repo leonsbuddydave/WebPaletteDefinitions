@@ -10,7 +10,7 @@
 				{
 					"type": "NAVIGATE",
 					"data": {
-						"destination": "http://stackoverflow.com/users/signup"
+						"destination": "//stackoverflow.com/users/signup"
 					}
 				}
 			]
@@ -21,7 +21,7 @@
 				{
 					"type": "NAVIGATE",
 					"data": {
-						"destination": "http://stackoverflow.com/users/login"
+						"destination": "//stackoverflow.com/users/login"
 					}
 				}
 			]
@@ -32,7 +32,7 @@
 				{
 					"type": "NAVIGATE",
 					"data": {
-						"destination": "https://stackoverflow.com/tour"
+						"destination": "//stackoverflow.com/tour"
 					}
 				}
 			]
@@ -72,6 +72,13 @@
 					"data": {
 						"question": "Enter something here",
 						"id": "whatever"
+					}
+				},
+				{
+					"type": "FREEFORM_INPUT",
+					"data": {
+						"question": "You entered the following input: {{whatever}}",
+						"id": "whateverConfirmation"
 					}
 				},
 				{

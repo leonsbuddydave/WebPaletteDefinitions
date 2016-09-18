@@ -1,6 +1,6 @@
 {
 	"root": "definitions",
 	"mappings": {
-		"stackoverflow.com": "stack-overflow.json"
+		"stackoverflow.com": "stack-overflow.js"
 	}
 }
